@@ -1,5 +1,9 @@
-Write-Output $env:KEYCLOAK_REPO
-Write-Output $env:PR_NUMBER
-Write-Output $env:WORKSPACE
-Write-Output $env:repo
+param
+(
+    [parameter(Mandatory=$true)]
+    [ValidateNotNullOrEmpty()]
+    [String]$username=$(Throw "Username required.")
+)
+
+Write-Output $username
 Write-Output 'EOF.'
