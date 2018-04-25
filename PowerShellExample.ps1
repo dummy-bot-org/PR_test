@@ -6,4 +6,6 @@ param
 )
 
 Write-Output $username
+Write-Output env:WORKSPACE
+Write-Output env:repo
 Write-Output 'EOF.'
