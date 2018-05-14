@@ -4,7 +4,7 @@ pipeline {
         stage('ExamplePowerShell') {
            
             steps {
-                powershell 'PowerShellExample.ps1'
+                powershell '.\\PowerShellExample.ps1'
             }
         }
     }
