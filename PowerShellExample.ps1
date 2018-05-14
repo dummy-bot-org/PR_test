@@ -1,11 +1,4 @@
-param
-(
-    [parameter(Mandatory=$true)]
-    [ValidateNotNullOrEmpty()]
-    [String]$username=$(Throw "Username required.")
-)
-
-Write-Output `"$username`"
-Write-Output $env:WORKSPACE
-Write-Output $env:repo
-Write-Output 'EOF.'
+Write-Output "----PUBLIC----"
+git clone https://github.com/Pepo48/keycloak-quickstarts.git
+Write-Output "----PRIVATE----"
+git clone https://github.com/Pepo48/keycloak-bot.git
