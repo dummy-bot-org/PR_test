@@ -4,7 +4,7 @@ pipeline {
         stage('ExamplePowerShell') {
            
             steps {
-                sshagent(credentials: ['Pepo48']) {
+                sshagent(credentials: ['tmp_key']) {
                     powershell 'test\\PowerShellExample.ps1'
                 }
             }
