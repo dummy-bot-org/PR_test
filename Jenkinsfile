@@ -4,7 +4,7 @@ pipeline {
         stage('ExamplePowerShell') {
            
             steps {
-                sshagent(credentials: ['keycloak-jenkins']) {
+                sshagent(credentials: ['Pepo48']) {
                     powershell 'test\\PowerShellExample.ps1'
                 }
             }
