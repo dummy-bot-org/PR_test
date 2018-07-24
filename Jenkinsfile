@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('ExampleShell') {    
             steps {
-                sh 'pwd; ls'
+                sh 'pwd; ls; ls test'
                 sh 'ShellExample.ps1'
             }
         }
