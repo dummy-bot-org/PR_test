@@ -1,12 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('ExamplePowerShell') {
-           
+        stage('ExamplePowerShell') {    
             steps {
-                sshagent(credentials: ['tmp_key']) {
-                    powershell 'test\\PowerShellExample.ps1'
-                }
+                powershell 'test\\PowerShellExample.ps1'
             }
         }
     }
