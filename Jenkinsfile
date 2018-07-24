@@ -4,7 +4,7 @@ pipeline {
         stage('ExampleShell') {    
             steps {
                 sh 'pwd; ls'
-                sh 'test/ShellExample.ps1'
+                sh 'ShellExample.ps1'
             }
         }
     }
