@@ -1,10 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('ExamplePowerShell') {    
+        stage('ExampleShell') {    
             steps {
-                powershell 'pwd;ls'
-                powershell 'test\\PowerShellExample.ps1'
+                sh 'pwd; ls'
+                sh 'test/ShellExample.ps1'
             }
         }
     }
